@@ -1,0 +1,14 @@
+langchain-community
+langchain-huggingface
+langchain-openai
+langchain-text-splitters
+openai
+PyPDF2
+weaviate-client
+langchain-weaviate
+faiss-cpu
+faiss-gpu
+pypdf
+pandas
+langchain_ollama
+gradio
