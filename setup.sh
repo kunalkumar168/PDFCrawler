@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # prepare a virtual environment for this tool
+python3 -m pip install virtualenv
 python3 -m virtualenv venv
 source venv/bin/activate
 

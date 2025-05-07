@@ -53,7 +53,7 @@ def main():
     current_workdir = Path.cwd()
     files_folder = f"{current_workdir}/files"
     vectordb_path = f"{current_workdir}/vectordb" 
-    file_paths = list(files_folder.rglob("*.pdf"))
+    file_paths = list(Path(files_folder).rglob("*.pdf"))
     if not file_paths:
         print(f"[ERROR] No PDF files found in {files_folder}")
         return

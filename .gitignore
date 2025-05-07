@@ -2,3 +2,8 @@ venv
 results*
 vectordb
 files
+*.json
+*.csv
+__pycache__
+.gradio
+.DS_Store

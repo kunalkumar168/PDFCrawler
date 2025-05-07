@@ -20,7 +20,8 @@ The pipeline involves parsing PDFs, splitting them into chunks, and storing embe
 ```bash
 ├── chatbot.py # RAG chatbot logic using Ollama + FAISS
 ├── vectordb_setup.py # Creates vector DB from PDF files
-├── live-chat.py # Gradio web interface
+├── ChatBotGUI.py # Gradio web interface
+├── create_relevance.py # Created relevancy list for context and pred/expected answer
 ├── files/ # Place your PDF files here
 ├── query.json # (Optional) Ground-truth Q&A for validation
 ├── vectordb/ # Saved FAISS vector DB (auto-generated)

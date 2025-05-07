@@ -79,10 +79,9 @@ class ChatBot:
         result_obj = qa_chain({"query": query})
         answer = result_obj["result"]
         sources = [
-            doc.metadata.get("source", "unknown").split("/")[-1]
+            {'source':doc.metadata.get("source", "unknown").split("/")[-1], 'page_content':doc.page_content}
             for doc in result_obj["source_documents"]
         ]
-
         return answer.strip(), sources
 
     def validate_answers(self, expected: str, predicted: str):
